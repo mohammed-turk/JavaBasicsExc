@@ -12,6 +12,7 @@ public class Main {
      • Input: Weight (kg) = 70, Height (m) = 1.75
      • Expected Output: BMI = 22.86
   */
+        System.out.println("--BMI calculator--");
         System.out.println("Enter your weight: ");
         double weight = scanner.nextDouble();
 
@@ -21,6 +22,7 @@ public class Main {
         double bmi = weight / height / height * 10000;
 
         System.out.printf("Your BMI is: %.2f%n" , bmi);
+        System.out.println("----------------------------------");
 
 
 /*
@@ -29,6 +31,8 @@ public class Main {
     • Input: Obtained Marks = 85, Total Marks = 100
     • Expected Output: Percentage = 85.0%
 */
+
+        System.out.println("--Marks percentage calculator--");
         System.out.println("Enter the total marks: ");
         int totalMarks = scanner.nextInt();
 
@@ -36,7 +40,7 @@ public class Main {
         int obtainedMarks = scanner.nextInt();
 
         System.out.println("Percentage = " + (totalMarks * obtainedMarks / 100 + "%"));
-
+        System.out.println("----------------------------------");
 
 /*
 3.  Create a program that takes an amount in one currency and an exchange rate
@@ -44,6 +48,8 @@ public class Main {
     • Input: Amount in USD = 100, Exchange Rate (USD to EUR) = 0.85
     • Expected Output: Amount in EUR = 85.0
 */
+
+        System.out.println("--Exchanging money from Dollars to Euro--");
         System.out.println("Enter the money amount in USD: ");
         double amount = scanner.nextDouble();
 
@@ -51,6 +57,8 @@ public class Main {
         double exchangeRate = scanner.nextDouble();
         scanner.nextLine();
         System.out.println("Amount in EUR = " + (amount * exchangeRate));
+        System.out.println("----------------------------------");
+
 
 /*
 4.
@@ -60,7 +68,10 @@ public class Main {
     • Input: "Hello, World!"
     • Expected Output: Length of the string: 13 And Reversed string: "!dlroW
     ,olleH"
+
+
 */
+        System.out.println("--Reversing a string--");
         System.out.println("Enter a string to be reversed: ");
         String string = scanner.nextLine();
 
@@ -68,7 +79,7 @@ public class Main {
         sb.append(string);
         sb.reverse();
         System.out.println("Length of the string: " + string.length() + " And Reversed string: " + sb);
-
+        System.out.println("----------------------------------");
 
 /*
 5.  Develop a program that takes a sentence as input and extracts a substring from
@@ -77,6 +88,7 @@ public class Main {
     = 10, End Index = 20
     • Expected Output: "brown fox"
  */
+        System.out.println("--Collecting a substring--");
         System.out.println("Enter a string to create a substring: ");
         String subString = scanner.nextLine();
 
@@ -96,20 +108,21 @@ public class Main {
     • Expected Output: Keyword "jumps" is present in the sentence.
  */
 
+        System.out.println("--checking for a word--");
         System.out.println("Enter a sentence to be validated: ");
         String sentence = scanner.nextLine();
 
         System.out.println("Enter the keyword to be checked: ");
         String keyWord = scanner.nextLine();
         System.out.println("is " + keyWord + " present in the sentence? " + sentence.contains(keyWord));
-
+        System.out.println("----------------------------------");
 
 /*
 7.  Develop a program that takes a sentence and a word to replace as input, then
     replace all occurrences of the word with another word and prints the modified
     sentence.
 */
-        System.out.println("Enter the sentence to be replaced: ");
+        System.out.println("Replacing a word in a sentence: ");
         String sentenceReplacment = scanner.nextLine();
 
         System.out.println("Enter the word to replace: ");
@@ -119,14 +132,14 @@ public class Main {
         String newWord = scanner.nextLine();
 
         System.out.println(sentenceReplacment.replace(replacingWord, newWord));
-
+        System.out.println("----------------------------------");
 /*
 8.  Write a program that takes two strings as input and check if they are equal,
     ignoring the case, then prints whether they are equal or not.
     • Input: String 1 = "Hello", String 2 = "hello"
     • Expected Output: Strings are equal (ignoring case).
 */
-
+        System.out.println("--Equating two strings--");
         System.out.println("Enter first string to be equated: ");
         String string1 = scanner.nextLine();
         System.out.println("Enter second string");
