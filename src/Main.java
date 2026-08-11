@@ -13,12 +13,13 @@ public class Main {
      • Expected Output: BMI = 22.86
   */
         System.out.println("--BMI calculator--");
-        System.out.println("Enter your weight: ");
+        System.out.println("Enter your weight (KG): ");
         double weight = scanner.nextDouble();
 
-        System.out.println("Enter your height: ");
+        System.out.println("Enter your height (M): ");
         double height = scanner.nextDouble();
 
+        height = height * 100;
         double bmi = weight / height / height * 10000;
 
         System.out.printf("Your BMI is: %.2f%n" , bmi);
